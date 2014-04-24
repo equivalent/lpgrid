@@ -1,5 +1,5 @@
-require "lpgrid/version"
+require 'lpgrid/version'
+require 'lpgrid/grid'
 
 module Lpgrid
-  # Your code goes here...
 end
