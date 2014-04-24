@@ -15,8 +15,8 @@ describe Lpgrid::Grid do
       it { should eq 'u' }
     end
 
-    context "when E5" do
-      let(:position) { 'E5' }
+    context "when E3" do
+      let(:position) { 'E3' }
       it { should eq 'c' }
     end
   end
