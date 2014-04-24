@@ -1,5 +1,3 @@
-require 'csv'
-
 module Lpgrid
   class Grid
 
@@ -13,7 +11,7 @@ module Lpgrid
     end
 
     def grid
-      @grid ||= CSV.table('./spec/fixtures/pure_grid.csv')
+      @grid ||= CSV.table(Lpgrid.config.csv)
     end
 
   end
