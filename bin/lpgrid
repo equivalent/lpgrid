@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'pathname'
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path("../../Gemfile",
+  Pathname.new(__FILE__).realpath)
+
+require 'rubygems'
+require 'bundler/setup'
+require 'lpgrid'
+
+puts "Welcome to Lpgrid - Last Pass Grid reader !"
+
+loop do
+  puts "Enter grid fields separated by space or \"exit\" to quit"
+  begin
+    input = gets.chomp
+    case input
+    when 'exit', 'quit'
+      exit 0
+    else
+      puts "=> #{Lpgrid::InputReader.translate input}"
+    end
+  rescue Lpgrid::InputReader::IncorectInputFormat
+    puts "ERROR: Incorrect format. Input must look like: a0 b3 d9 x2"
+  end
+  puts "\n"
+end
