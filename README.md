@@ -2,6 +2,9 @@
 
 Last Pass Grid reader
 
+[![Build Status](https://api.travis-ci.org/equivalent/cached_at.png?branch=master)](http://travis-ci.org/equivalent/lpgrid)
+[![Code Climate](https://codeclimate.com/github/equivalent/lpgrid.png)](https://codeclimate.com/github/equivalent/lpgrid)
+
 Last pass introduced another layer of protection with Grid card. 
 This small Ruby program is here to help you read you grid card
 information more easily.
