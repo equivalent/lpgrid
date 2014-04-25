@@ -6,6 +6,10 @@ Last pass introduced another layer of protection with Grid card.
 This small Ruby program is here to help you read you grid card
 information more easily.
 
+## Requirements
+
+ruby 2.0 or greater 
+
 ## Installation
 
     gem install 'lpgrid'
