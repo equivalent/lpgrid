@@ -1,9 +1,9 @@
 require 'spec_helper'
 describe Lpgrid::Grid do
-  let(:grid) { described_class.new }
+  let(:grid) { described_class.new(position) }
 
   describe '#fetch' do
-    subject { grid.fetch position }
+    subject { grid.fetch }
 
     context "when A0" do
       let(:position) { 'a0' }

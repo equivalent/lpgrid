@@ -1,18 +1,24 @@
 module Lpgrid
   class Grid
+    attr_reader :position
 
-    def parse_position(position)
-      position.split(//)
-    end
-
-    def fetch(position)
-      col, row = parse_position(position)
-      grid[row.to_i].fetch(col.downcase.to_sym)
-    end
-
-    def grid
+    def self.grid
       @grid ||= CSV.table(Lpgrid.config.csv)
     end
 
+    def initialize(position)
+      @position = position
+    end
+
+    def fetch
+      parse_position
+      self.class.grid[@row.to_i].fetch(@col.downcase.to_sym)
+    end
+
+    private
+
+    def parse_position
+      @col, @row = position.split(//)
+    end
   end
 end
