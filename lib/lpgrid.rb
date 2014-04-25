@@ -3,6 +3,7 @@ require 'yaml'
 require 'lpgrid/version'
 require 'lpgrid/configuration'
 require 'lpgrid/grid'
+require 'lpgrid/input_reader'
 
 module Lpgrid
   attr_reader :config
