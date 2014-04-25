@@ -7,6 +7,6 @@ RSpec.configure do |config|
 
   config.before :each do
     Lpgrid::Configuration.any_instance.stub(:file_path).
-      and_return(Lpgrid.root.join('spec', 'config.yaml'))
+      and_return(Lpgrid.root.join('spec', 'config.yml'))
   end
 end

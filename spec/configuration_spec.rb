@@ -7,7 +7,7 @@ describe Lpgrid::Configuration do
     before { Lpgrid::Configuration.any_instance.unstub(:file_path) }
     it do
       configuration.file_path.to_s.should eq File.
-        expand_path '../../config.yaml', __FILE__
+        expand_path '../../config.yml', __FILE__
     end
   end
 end

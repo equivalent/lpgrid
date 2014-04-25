@@ -2,7 +2,7 @@ module Lpgrid
   class Configuration
 
     def file_path
-      Lpgrid.root.join('config.yaml')
+      Lpgrid.root.join('config.yml')
     end
 
     def options
