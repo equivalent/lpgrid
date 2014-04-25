@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Lpgrid::VERSION
   spec.authors       = ["Tomas Valent"]
   spec.email         = ["equivalent@eq8.eu"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Last Pass Grid reader}
+  spec.summary       = %q{Reads last pass grid.csv}
+  spec.homepage      = "https://github.com/equivalent/lpgrid"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
