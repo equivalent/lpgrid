@@ -1,29 +1,29 @@
 # Lpgrid
 
-TODO: Write a gem description
+Last Pass Grid reader
+
+Last pass introduced another layer of protection with Grid card. 
+This small Ruby program is here to help you read you grid card
+information more easily.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'lpgrid'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install lpgrid
+    gem install 'lpgrid'
 
 ## Usage
 
-TODO: Write usage instructions here
+    bin/lpgrid
+
+## Tests
+
+To run tests trigger
+
+    rake
 
 ## Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
+3. Commit your changes with TESTS (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
