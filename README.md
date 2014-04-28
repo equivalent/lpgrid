@@ -15,10 +15,11 @@ ruby 2.0 or greater
 
 ## Installation
 
-    gem install 'lpgrid'
+    git clone git@github.com:equivalent/lpgrid.git
 
 ## Usage
 
+    cd lpgrid
     bin/lpgrid
 
 ## Tests
