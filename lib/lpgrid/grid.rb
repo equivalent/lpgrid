@@ -12,7 +12,7 @@ module Lpgrid
 
     def fetch
       parse_position
-      self.class.grid[@row.to_i].fetch(@col.downcase.to_sym)
+      self.class.grid[@row.to_i].field(@col.downcase.to_sym)
     end
 
     private
