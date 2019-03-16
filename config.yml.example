@@ -1,1 +1,1 @@
-csv_path: '~/path/to/my/grid.csv'
+csv_path: '/home/myuser/path/to/my/grid.csv'
