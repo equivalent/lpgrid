@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Tomas Valent"]
   spec.email         = ["equivalent@eq8.eu"]
   spec.description   = %q{Last Pass Grid reader}
-  spec.summary       = %q{Reads last pass grid.csv}
+  spec.summary       = %q{Reads last pass grid.csv. Just save it to your LastPass generated MFA grid to ~/.grid.csv and run command lpgrid}
   spec.homepage      = "https://github.com/equivalent/lpgrid"
   spec.license       = "MIT"
 

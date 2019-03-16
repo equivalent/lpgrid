@@ -5,30 +5,51 @@ Last Pass Grid reader
 [![Build Status](https://api.travis-ci.org/equivalent/lpgrid.png?branch=master)](http://travis-ci.org/equivalent/lpgrid)
 [![Code Climate](https://codeclimate.com/github/equivalent/lpgrid.png)](https://codeclimate.com/github/equivalent/lpgrid)
 
-Last pass introduced another layer of protection with Grid card. 
-This small Ruby program is here to help you read you grid card
-information more easily.
 
-## Requirements
+Given you use [LastPass](https://lastpass.com) with Grid MFA
+(multifactor authentication) this small Ruby CLI tool will help you read 
+your LastPass generated `grid.csv`.
 
-ruby 2.0 or greater 
+All you need to do is download `grid.csv` to home folder as `~/.grid.csv`
 
-## Installation
+Then install this Ruby Gem: `gem install lpgrid` (this application)
+
+And run `lpgrid`
+
+example:
+
+```
+$ lpgrid
+Welcome to Lpgrid - Last Pass Grid reader !
+Enter grid fields separated by space or "exit" to quit
+c2 b2 u8 x0
+=> 1 8 2 3
+```
+
+
+
+## Development
+
+### Requirements
+
+Ruby 2.0 or greater.
+
+### Installation
 
     git clone git@github.com:equivalent/lpgrid.git
 
-## Usage
+### Usage
 
     cd lpgrid
     bin/lpgrid
 
-## Tests
+### Tests
 
 To run tests trigger
 
     rake
 
-## Contributing
+### Contributing
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
